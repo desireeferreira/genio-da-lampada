@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sevillana", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url("https://github.com/mariaccarolina/TurmaFDV/blob/main/imagens/Imagem%20palacio.png?raw=true");
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: "Sevillana", sans-serif;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+img {
+  width: 350px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  img {
+    width: 350px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
